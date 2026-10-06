@@ -42,7 +42,7 @@ console.log(navigatorName);
 if (hacker1 < hacker2) {
   console.log("The driver's name goes first.");
 } else if (hacker1 > hacker2) {
-  console.log("Yo, the navigator goes first definitely.");
+  console.log("Yo, the navigator goes first, definitely.");
 } else {
   console.log("What?! You both have the same name?");
 }
