@@ -68,3 +68,13 @@ for (let i = 0; i < longText.length; i++) {
 }
 
 console.log(wordCount);
+
+let etCount = 0;
+
+for (let i = 0; i < longText.length; i++) {
+  if(longText[i - 1] === " " && longText[i] === "e"  && longText[i + 1] === "t" && longText[i + 2] === " ") {
+    etCount++;
+  }
+}
+
+console.log(etCount);
