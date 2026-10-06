@@ -52,6 +52,7 @@ if (hacker1 < hacker2) {
 ---------------
 BONUS
 ---------------
+1.-
 */
 const longText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
@@ -78,3 +79,27 @@ for (let i = 0; i < longText.length; i++) {
 }
 
 console.log(etCount);
+
+
+/*
+1.2 
+*/
+const phrase = prompt("Introduce tu frase (y veremos si es un palindromo)").toLowerCase();
+
+let cleanPhrase = "";
+for (let i = 0; i < phrase.length; i++) {
+  if (phrase[i] !== " " && phrase[i] !== "," && phrase[i] !== "!" && phrase[i] !== "'" && phrase[i] !== "?" && phrase[i] !== ".") {
+    cleanPhrase = cleanPhrase + phrase[i];
+  }
+}
+
+let reversedPhrase = "";
+for (let i = cleanPhrase.length - 1; i >= 0; i--) {
+  reversedPhrase = reversedPhrase + cleanPhrase[i];
+}
+
+if (cleanPhrase === reversedPhrase) {
+  console.log("The phrase is a palindrome.");
+} else {
+  console.log("The phrase is not a palindrome.");
+}
